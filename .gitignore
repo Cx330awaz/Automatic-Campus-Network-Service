@@ -1,0 +1,11 @@
+# 本地配置：含明文账号密码，永远不要提交
+config.ini
+
+# 本机 / 本次会话的私有设置
+.claude/settings.local.json
+
+# 运行时产物
+logs/
+debug/
+__pycache__/
+*.py[cod]

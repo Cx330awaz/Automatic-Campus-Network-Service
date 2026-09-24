@@ -1,0 +1,31 @@
+[account]
+# 校园网账号与密码（务必填写）
+username =
+password =
+
+# 运营商选择。脚本会按下面的关键词在页面上模糊匹配：
+填'中国联通','中国移动','中国电信'
+isp = 
+
+[network]
+# 要连接的 WLAN 热点名称
+ssid = JOU
+# 无线网卡接口名（netsh wlan show interfaces 里的"名称"那一项）
+interface = WLAN
+# 等待连上 Wi-Fi 的时间（秒）
+connect_timeout = 45
+# 等待认证门户出现的时间（秒）
+portal_timeout = 40
+# 提交后等待联网成功的时间（秒）
+login_timeout = 30
+
+[browser]
+# 浏览器内核：edge 或 chrome
+engine = chrome
+# 是否无头运行（不显示窗口）。false = 能看到自动填充过程
+headless = false
+# 登录成功后停留几秒再关闭浏览器
+keep_open_seconds = 2
+# 登录成功后，是否关掉 Windows 连 Wi-Fi 时自动弹出的那个门户登录页窗口
+# （那个窗口是系统用默认浏览器弹的，不属于脚本，driver.quit() 关不掉它）
+close_portal_window = true
